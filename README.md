@@ -20,6 +20,11 @@
 
 同CH554的官方例程
 
+更多资源：http://www.wch.cn/downloads/category/28.html
+
+- 程序下载工具
+
+http://www.wch.cn/download/WCHISPTool_Setup_exe.html
 
 ---
 
