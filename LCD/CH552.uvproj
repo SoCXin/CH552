@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>LCD</TargetName>
+      <TargetName>CH552</TargetName>
       <ToolsetNumber>0x0</ToolsetNumber>
       <ToolsetName>MCS-51</ToolsetName>
       <uAC6>0</uAC6>
@@ -374,7 +374,7 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>CH552</GroupName>
+          <GroupName>USER</GroupName>
           <Files>
             <File>
               <FileName>main.c</FileName>

@@ -1,8 +1,14 @@
-﻿[![sites](docs/mcuyun.png)](http://www.mcuyun.com)
+﻿# [CH552](https://github.com/mcuyun/CH552) 
 
-# WCH CH552X
+WCH CH552单片机
 
-### 简介
+[![sites](mcuyun/mcuyun.png)](http://www.mcuyun.com)
+
+#### 更多MCU：[mcuyun](https://github.com/mcuyun/whyme)可访问 www.mcuyun.com
+
+---
+
+## 简介
 
 最廉价的USB通信单片机，如果要做一款低成本的交互式产品，该平台十分合适
 
@@ -10,19 +16,19 @@
 
 ---
 
-### 组成
+## 组成
 
-- docs
+#### LCD
 
-包括芯片手册资料等
+包括LCD通信工程代码
 
-- HID
+#### HID
 
-包括一个HID通信的工程代码，简介易用
+包括一个HID通信的工程代码
 
-- examples
+#### examples
 
-同CH554的官方例程
+- 同CH554的官方例程
 
 更多资源：http://www.wch.cn/downloads/category/28.html
 
@@ -32,7 +38,4 @@ http://www.wch.cn/download/WCHISPTool_Setup_exe.html
 
 ---
 
-### 说明
-
-2018-10-17: 创建工程仓库，添加官方的一些库文件
-
+###  www.mcuyun.com   |    qitas@qitas.cn
