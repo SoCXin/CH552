@@ -1,10 +1,7 @@
 ﻿# [CH552](https://github.com/sochub/CH552) 
-
 [![sites](SoC/SoC.png)](http://www.qitas.cn) 
-
 ####  qitas@qitas.cn
-
-#### 父级：[WCH-8051](https://github.com/sochub/WCH-8051) 
+#### 父级：[CH55x系列](https://github.com/sochub/CH55)
 #### 归属：[MCS-51](https://github.com/sochub/MCS-51) 
 
 ## [简介](https://github.com/sochub/CH552/wiki)
@@ -17,21 +14,17 @@ CH552内置了ADC 模数转换、触摸按键电容检测、3 组定时器和信
 
 [![sites](SoC/CH552.png)](http://www.wch.cn/products/CH552.html) 
 
-## [组成](https://github.com/sochub/CH552)
+### [组成](https://github.com/sochub/CH552)
 
-#### [文档](docs/)
+- [文档](docs/)
+- [资源](src/)
+- [工程](project/)
 
-#### [资源](src/)
+### [替换方案](https://github.com/sochub/CH552)
 
-#### [工程](project/)
-
-### [相似产品](https://github.com/sochub/CH552)
-
-- [CH558](https://github.com/sochub/CH558) 
-
+- [CH551](https://github.com/sochub/CH551) 
 - [CH554](https://github.com/sochub/CH554) 
 
 ##  [SoC开发平台](http://www.qitas.cn)  
-
 
 
