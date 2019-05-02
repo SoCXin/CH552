@@ -2,11 +2,11 @@
 [![sites](SoC/SoC.png)](http://www.qitas.cn) 
 ####  qitas@qitas.cn
 #### 父级：[CH55x系列](https://github.com/sochub/CH55)
-#### 归属：[MCS-51](https://github.com/sochub/MCS-51) 
+#### 归属：[8051架构](https://github.com/sochub/8051) 
 
 ## [简介](https://github.com/sochub/CH552/wiki)
 
-CH552芯片是一款兼容MCS51 指令集的增强型E8051内核单片机，其79%的指令是单字节单周期指令，平均指令速度比标准MCS51快8～15 倍。
+CH552芯片是一款兼容MCS-51指令集的增强型E8051内核单片机，其79%的指令是单字节单周期指令，平均指令速度比标准MCS-51快8～15 倍。
 
 CH552 支持最高24MHz 系统主频，内置16K 程序存储器ROM 和256 字节内部iRAM 以及1K 字节片内xRAM，xRAM 支持DMA直接内存存取。
 
