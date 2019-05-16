@@ -17,7 +17,7 @@ CH552内置了ADC 模数转换、触摸按键电容检测、3 组定时器和信
 ### [资源组成](https://github.com/sochub/CH552)
 
 * [参考文档](docs/)
-	* [芯片手册](docs/CH552.PDF)
+	* [芯片手册](docs/)
 * [参考资源](src/)
 	* [引用资源](src/include)
 	* [参考资源](src/examples)
@@ -31,15 +31,10 @@ CH552内置了ADC 模数转换、触摸按键电容检测、3 组定时器和信
 
 2倍左右性能和资源增幅可选[CH558](https://github.com/sochub/CH558)或[CH559](https://github.com/sochub/CH559)替换，提供LQFP48封装
 
-相同规格成本略高替换可选[CH554](https://github.com/sochub/CH554)，全面升级替换可选[CH54系列](https://github.com/sochub/CH54)
+相同规格略略提升替换可选[CH554](https://github.com/sochub/CH554)，全面升级替换可选[CH54系列](https://github.com/sochub/CH54)
 
 ### [芯片应用](https://github.com/sochub/CH552)
 
 * [OS-Q：USB管道设备L](https://github.com/OS-Q/D95)
 
-### [项目参考](https://github.com/sochub/CH552)
-
-
-##  [SoC开发平台](http://www.qitas.cn)  
-
-
+##  [SoC资源平台](http://www.qitas.cn)
