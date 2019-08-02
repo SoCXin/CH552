@@ -1,9 +1,9 @@
 ﻿# [CH552](https://github.com/sochub/CH552) 
 [![sites](SoC/SoC.png)](http://www.qitas.cn) 
 #### 厂商：[WCH](https://github.com/sochub/WCH)
-#### 父级：[CH55](https://github.com/sochub/CH55)
 #### 架构：[8051](https://github.com/sochub/8051) 
-
+#### 父级：[CH55x](https://github.com/sochub/CH55)
+#### 芯片定级：[Level](https://github.com/sochub/Level)
 ## [CH552简介](https://github.com/sochub/CH552/wiki)
 
 CH552芯片是一款兼容MCS-51指令集的增强型E8051内核单片机，其79%的指令是单字节单周期指令，平均指令速度比标准MCS-51快8～15 倍。
