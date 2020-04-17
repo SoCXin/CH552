@@ -17,10 +17,22 @@
 [![sites](docs/CH55.png)](http://www.wch.cn/products/category/5.html) 
 [![sites](docs/CH552.png)](http://www.wch.cn/products/CH552.html) 
 
+* 芯片封装：TSSOP20、MSOP10、QFN16、SOP16
+
+[![sites](docs/sop.png)](http://www.wch.cn/products/CH554.html) 
+[![sites](docs/package.png)](http://www.wch.cn/products/CH554.html) 
+
 ### [资源收录](https://github.com/sochub/CH552)
 
 * [参考文档](docs/)
 * [参考资源](src/)
+* [相关工具](tools/)
+
+#### [外部资源](https://github.com/sochub)
+
+* [OS-Q H05](https://github.com/OS-Q/H02)
+* [编译器SDCC](https://github.com/sochub/sdcc)
+
 
 ### [选型建议](https://github.com/sochub)
 
