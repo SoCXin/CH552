@@ -3,12 +3,12 @@
 [![sites](http://182.61.61.133/link/resources/SoC.png)](https://stop.stops.top) 
 
 #### [Vendor](https://github.com/sochub/Vendor)：[WCH](https://github.com/sochub/WCH)
-#### [Cortex](https://github.com/sochub/Cortex)：[E8051](https://github.com/sochub/8051)
+#### [Core](https://github.com/sochub/8051)：[E8051](https://github.com/sochub/8051)
 #### [Level](https://github.com/sochub/Level)：6/24MHz 
 
 ## [CH552简介](https://github.com/sochub/CH552/wiki)
 
-[CH552](https://github.com/sochub/CH552) 芯片是一款兼容MCS-51指令集的增强型E8051内核单片机，其79%的指令是单字节单周期指令，平均指令速度比标准MCS-51快8～15倍。
+[CH552](https://github.com/sochub/CH552) 是一款兼容MCS-51指令集的增强型E8051内核单片机，其79%的指令是单字节单周期指令，平均指令速度比标准MCS-51快8～15倍。
 
 支持最高24MHz 系统主频，内置16K 程序存储器ROM 和256 字节内部iRAM 以及1K 字节片内xRAM，xRAM 支持DMA直接内存存取。
 
@@ -30,7 +30,7 @@
 
 #### [外部资源](https://github.com/sochub)
 
-* [OS-Q H05](https://github.com/OS-Q/H02)
+* [OS-Q H05](https://github.com/OS-Q/H05)
 * [编译器SDCC](https://github.com/sochub/sdcc)
 
 
