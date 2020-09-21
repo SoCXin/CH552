@@ -1,0 +1,5 @@
+obj/
+list/
+*.uvgui.*
+*.uvgui_*
+*.uvopt
