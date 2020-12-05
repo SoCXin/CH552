@@ -2,22 +2,26 @@
 
 [![sites](http://182.61.61.133/link/resources/SoC.png)](http://www.SoC.Xin)
 
-#### [Vendor](https://github.com/SoCXin/Vendor)：[WCH](https://github.com/SoCXin/WCH)
+#### [Vendor](https://github.com/SoCXin/Vendor)：[WCH](http://www.wch.cn/)
 #### [Core](https://github.com/SoCXin/8051)：[E8051](https://github.com/SoCXin/8051)
-#### [Level](https://github.com/SoCXin/Level)：6/24MHz
+#### [Level](https://github.com/SoCXin/Level)：24MHz
 
 ## [CH552简介](https://github.com/SoCXin/CH552/wiki)
 
-[CH552](https://github.com/SoCXin/CH552) 是一款兼容MCS-51指令集的增强型E8051内核单片机，其79%的指令是单字节单周期指令，平均指令速度比标准MCS-51快8～15倍。
+[CH552](https://github.com/SoCXin/CH552)兼容MCS51的增强型E8051内核，79%指令是单字节单周期指令，2KB Boot + 14KB Flash，1K xRAM(支持DMA) +256B iRAM，128B DataFlash。
 
-支持最高24MHz 系统主频，内置16K 程序存储器ROM 和256 字节内部iRAM 以及1K 字节片内xRAM，xRAM 支持DMA直接内存存取。
+内置2KB BootLoader，支持USB和串口ISP，提供ISP下载库。
 
-内置了ADC 模数转换、触摸按键电容检测、3 组定时器和信号捕捉及PWM、双异步串口、SPI、USB设备控制器和全速收发器、USB type-C等功能模块。
+内置24MHz时钟源和PLL，内置了ADC模数转换、触摸按键电容检测、3组定时器和信号捕捉及PWM、双异步串口、SPI、USB设备控制器和全速收发器、USB type-C等功能模块。
 
-* 芯片封装：TSSOP20、MSOP10、QFN16
-
-[![sites](docs/CH55.png)](http://www.wch.cn/products/category/5.html)
 [![sites](docs/CH552.png)](http://www.wch.cn/products/CH552.html)
+#### 关键特性
+
+* 5V->3.3V LDO
+* Type-C主从检测
+* USB全速设备模式
+* UART x 2 + SPI
+* 性价比小封装(TSSOP20/SOP16/MSOP10/QFN16)
 
 ### [资源收录](https://github.com/SoCXin/CH552)
 
@@ -28,7 +32,8 @@
 
 ### [选型建议](https://github.com/SoCXin)
 
-[CH552](https://github.com/SoCXin/CH552) 是 8051 USB单片机中的低成本方案，性价比高，相同规格略提升替换可选[CH554](https://github.com/SoCXin/CH554)，降低规格可选[CH551](https://github.com/SoCXin/CH551)，更高性能的替换可选2倍左右性能和资源增幅的[CH558](https://github.com/SoCXin/CH558) 或 [CH559](https://github.com/SoCXin/CH559)。
+[CH552](https://github.com/SoCXin/CH552) 是市场上高性价比USB单片机，在开源社区中拥有较高声望，拥有Arduino资源适配和各种开发历程。
 
+同系列中，USB主从设备升级可选[CH554](http://www.wch.cn/products/CH554.html)，降低规格可选[CH551](http://www.wch.cn/products/CH551.html)
 
-##  [SoC资源平台](http://www.qitas.cn)
+###  [SoC芯平台](http://www.SoC.Xin)
