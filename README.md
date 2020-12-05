@@ -28,12 +28,14 @@
 * [参考文档](docs/)
 * [参考资源](src/)
 * [参考工程](project/)
-* [相关工具](tools/)
+
+* [烧录工具上位机](http://www.wch.cn/downloads/WCHISPTool_Setup_exe.html)
 
 ### [选型建议](https://github.com/SoCXin)
 
 [CH552](https://github.com/SoCXin/CH552) 是市场上高性价比USB单片机，在开源社区中拥有较高声望，拥有Arduino资源适配和各种开发历程。
 
-同系列中，USB主从设备升级可选[CH554](http://www.wch.cn/products/CH554.html)，降低规格可选[CH551](http://www.wch.cn/products/CH551.html)
+同系列中，USB主从设备升级可选[CH554](http://www.wch.cn/products/CH554.html)，支持USB HOST主机模式和USB DEVICE设备模式
 
+降低规格可选[CH551](http://www.wch.cn/products/CH551.html)，程序存储器ROM 为10K，片内xRAM为512 字节，异步串口仅提供UART0，封装形式仅SOP16，并且去掉了ADC模数转换模块和USB type-C模块
 ###  [SoC芯平台](http://www.SoC.Xin)
