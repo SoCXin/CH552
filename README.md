@@ -38,6 +38,5 @@
 同系列中升级[CH554](http://www.wch.cn/products/CH554.html)将增加支持USB HOST主机模式
 
 降低规格可选[CH551](http://www.wch.cn/products/CH551.html)，ROM降为10K，片内xRAM为512字节，异步串口仅提供UART0，仅SOP16封装，并且去掉了ADC模数转换模块和USB type-C模块
-###  [SoC芯平台](http://www.SoC.Xin)
-
+###  [www.SoC.xin(芯)](http://www.SoC.Xin)
 

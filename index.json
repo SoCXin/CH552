@@ -1,0 +1,62 @@
+{
+    "name":"CH552",
+    "series":["CH552P","CH551P"],
+    "type":"MCU",
+    "Core":"8051",
+    "Freq":"24MHz",
+    "description":"WCH 1T 8051 CH552 MCU",
+    "peripheral": ["ADC","DAC","USB","RTC","UART","SUART","I2C","I2S","SPI","AES","DMA"],
+    "package":["LQFP48","QFN28","SOP16"],
+    "SRAM":8,
+    "Flash":64,
+    "UART": {
+        "num": 3,
+        "FIFO": 16,
+        "ISO7816": 1,
+        "more":["BUAD","LIN","IrDA"]
+    },
+    "ADC": {
+        "num": 1,
+        "PGA": 4,
+        "channel": 16,
+        "resolution": 12,
+        "rate": 2400
+    },
+    "TIM": {
+        "resolution":[16,16,16,16,32],
+        "rate": 1024
+    },
+    "RCC": {
+        "HSI": 16384,
+        "LSI": 32,
+        "HSE": [1024,20480],
+        "PLL": [32768,49152],
+        "accuracy": 0.02,
+        "rate": 1024
+    },
+    "USB": {
+        "num": 1,
+        "more":["FS","device"]
+    },
+    "RTC": {
+        "CLK": 32768,
+        "PPM": 1.5,
+        "Ivdd": 0.5
+    },
+    "PWR": {
+        "VDD": [1850,5500],
+        "Ivdd": 3.5,
+        "rate": 1024
+    },
+    "upload": {
+        "ISP": true,
+        "IAP": true,
+        "SWD": true,
+        "speed": 115200
+    },
+    "vendor":"WCH",
+    "url":"http://www.SoC.xin/CH552",
+    "repo":"https://github.com/SoCXin/CH552",
+    "homepage": "http://www.wch.cn/products/CH552.html",
+    "version":"1.0.0"
+}
