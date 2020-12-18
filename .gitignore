@@ -1,4 +1,5 @@
 *.pyc
 *.hex
+*.log
 .pio/
 .vscode/
