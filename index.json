@@ -1,6 +1,6 @@
 {
     "name":"CH552",
-    "series":["CH552","CH551"],
+    "series":["CH552P","CH552T","CH552E","CH552G","CH551G"],
     "type":"MCU",
     "Core":"MCS51",
     "Freq":"24MHz",
