@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'project/**'
+      - '**.yml'
 
 jobs:
   CodeCheck:

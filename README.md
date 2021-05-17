@@ -2,6 +2,9 @@
 
 [![sites](http://182.61.61.133/link/resources/SoC.png)](http://www.SoC.Xin)
 
+[![Build Status](https://github.com/SoCXin/CH552/workflows/project/badge.svg)](https://github.com/SoCXin/CH552/actions/workflows/project.yml)
+[![Build Status](https://github.com/SoCXin/CH552/workflows/src/badge.svg)](https://github.com/SoCXin/CH552/actions/workflows/src.yml)
+
 #### [Vendor](https://github.com/SoCXin/Vendor)：[WCH](http://www.wch.cn/)
 #### [Core](https://github.com/SoCXin/8051)：[8051](https://github.com/SoCXin/8051)
 #### [Level](https://github.com/SoCXin/Level)：24MHz

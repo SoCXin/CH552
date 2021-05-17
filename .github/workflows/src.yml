@@ -1,9 +1,10 @@
-name: template
+name: src
 
 on:
   push:
     paths:
       - 'src/**'
+      - '**.yml'
 
 jobs:
   build:
