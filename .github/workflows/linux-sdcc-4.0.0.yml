@@ -15,22 +15,23 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Check out
-      uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+        with:
+          submodules: "recursive"
+          fetch-depth: 1
 
-    - name: Download SDCC
-      run: |
-        wget https://sourceforge.net/projects/sdcc/files/sdcc-linux-amd64/4.0.0/sdcc-4.0.0-amd64-unknown-linux2.5.tar.bz2
-        tar -xf sdcc-4.0.0-amd64-unknown-linux2.5.tar.bz2
-        echo `pwd`/sdcc-4.0.0/bin >> $GITHUB_PATH
+      - name: Install sdcc
+        run: |
+          wget https://sourceforge.net/projects/sdcc/files/sdcc-linux-amd64/4.0.0/sdcc-4.0.0-amd64-unknown-linux2.5.tar.bz2
+          tar -xf sdcc-4.0.0-amd64-unknown-linux2.5.tar.bz2
+          echo `pwd`/sdcc-4.0.0/bin >> $GITHUB_PATH
 
-    - name: Build
-      working-directory: src/template
-      run: make
+      - name: Build
+        working-directory: src/template
+        run: make
 
-    - uses: actions/upload-artifact@v2
-      with:
-        name: sdcc_template
-        path: src/template
+      - uses: actions/upload-artifact@v2
+        with:
+          name: sdcc_template
+          path: src/template

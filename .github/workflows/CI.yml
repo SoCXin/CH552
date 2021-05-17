@@ -52,22 +52,29 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Check out
-      uses: actions/checkout@v2
-      with:
-        submodules: "recursive"
-        fetch-depth: 1
+      - name: Check out
+        uses: actions/checkout@v2
+        with:
+          submodules: "recursive"
+          fetch-depth: 1
 
-    - name: Install
-      working-directory: project
-      run: |
-        sudo apt-get install gcc-arm-none-eabi -y
+      - name: Install sdcc
+        run: |
+          wget https://sourceforge.net/projects/sdcc/files/sdcc-linux-amd64/4.0.0/sdcc-4.0.0-amd64-unknown-linux2.5.tar.bz2
+          tar -xf sdcc-4.0.0-amd64-unknown-linux2.5.tar.bz2
+          echo `pwd`/sdcc-4.0.0/bin >> $GITHUB_PATH
 
-    - name: Build
-      if: success()
-      working-directory: project/gcc
-      run: |
-        make
+      - name: Build project
+        if: success()
+        working-directory: project/JTAG
+        run: |
+          make
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: sdcc_project
+          path: project/JTAG
+
 
     # - name: Download
     #   working-directory: src
@@ -99,9 +106,3 @@ jobs:
     #     source-dir: src
     #     build-dir: src/output
     #     parallel: 8
-
-    - name: Upload
-      uses: actions/upload-artifact@v2
-      with:
-        name: firmware
-        path: project/gcc/obj

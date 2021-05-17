@@ -14,9 +14,9 @@ MAIN := $(SRC_DIR)/main.c
 TARGET := flashme
 
 # Point to SDCC toolchain folder
-TOOLCHAIN := ../sdcc-4.0.0/bin
-CC := $(TOOLCHAIN)/sdcc
-OBJCOPY = $(TOOLCHAIN)/sdobjcopy
+# TOOLCHAIN := ../sdcc-4.0.0/bin
+CC :=  sdcc
+OBJCOPY = sdobjcopy
 CFLAGS := \
 	-mmcs51 \
 	--model-large \
