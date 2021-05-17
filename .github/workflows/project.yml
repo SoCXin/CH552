@@ -45,13 +45,13 @@ jobs:
 
   build:
     strategy:
-    fail-fast: false
-    matrix:
-      items:
-        - "JTAG"
-        - "jump_to_bl"
-        - "si5351"
-      os: [ubuntu-latest]
+      fail-fast: false
+      matrix:
+        items:
+          - "JTAG"
+          - "jump_to_bl"
+          - "si5351"
+        os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - name: Check out
