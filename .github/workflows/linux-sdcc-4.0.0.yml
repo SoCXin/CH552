@@ -1,16 +1,9 @@
-name: SDCC_4.0.0
+name: template
 
 on:
   push:
-    branches:
-      - master
-      - github_actions
-    tags:
-      - '*'
-  pull_request:
-    branches:
-      - master
-      - github_actions
+    paths:
+      - 'src/**'
 
 jobs:
   build:
@@ -34,4 +27,4 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: sdcc_template
-          path: src/template
+          path: src/template/out

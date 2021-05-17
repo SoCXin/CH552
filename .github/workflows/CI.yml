@@ -1,16 +1,9 @@
-name: CI
+name: project
 
 on:
   push:
-    branches:
-      - master
-# on:
-#   push:
-#     paths:
-#       - 'src/**'
-#   pull_request:
-#     paths:
-#       - 'src/**'
+    paths:
+      - 'project/**'
 
 jobs:
   CodeCheck:
@@ -50,7 +43,15 @@ jobs:
         path: codecheck.txt
 
   build:
-    runs-on: ubuntu-latest
+    strategy:
+    fail-fast: false
+    matrix:
+      items:
+        - "JTAG"
+        - "jump_to_bl"
+        - "si5351"
+      os: [ubuntu-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - name: Check out
         uses: actions/checkout@v2
@@ -66,43 +67,13 @@ jobs:
 
       - name: Build project
         if: success()
-        working-directory: project/JTAG
+        working-directory: project
         run: |
-          make
+          make -C ${{ matrix.items }}
 
       - uses: actions/upload-artifact@v2
+        if: success()
         with:
-          name: sdcc_project
-          path: project/JTAG
+          name: build_project
+          path: project/${{ matrix.items }}
 
-
-    # - name: Download
-    #   working-directory: src
-    #   run: |
-    #     wget https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz2
-    #     tar -xf gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz2
-
-    # - name: Build
-    #   working-directory: src
-    #   run: |
-    #     mkdir build && cd build
-    #     # cmake -DMCU_TYPE=MM32F031 -D CROSS_COMPILER_PATH=../gcc-arm-none-eabi-10-2020-q4-major .. && make
-    #     # mkdir -p ./output && cp *.elf "$_"
-    #     # make clean
-
-    # - name: Build
-    #   working-directory: src
-    #   run: |
-    #     mkdir build && cd build
-    #     cmake -DMCU_TYPE=MM32F031 -D CROSS_COMPILER_PATH=../gcc-arm-none-eabi-10-2020-q4-major ..
-
-    # - name: output
-    #   run: |
-    #     mkdir src/output
-
-    # - name: Action build
-    #   uses: Qful/cmake-action@master
-    #   with:
-    #     source-dir: src
-    #     build-dir: src/output
-    #     parallel: 8
