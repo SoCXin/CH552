@@ -1,4 +1,4 @@
-name: project
+name: demo
 
 on:
   push:

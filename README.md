@@ -1,19 +1,19 @@
-﻿# [CH552](https://docs.soc.xin/CH552)
+﻿# [CH552](https://doc.soc.xin/CH552)
 
-[![Build Status](https://github.com/SoCXin/CH552/workflows/project/badge.svg)](https://github.com/SoCXin/CH552/actions/workflows/project.yml)
+[![Build Status](https://github.com/SoCXin/CH552/workflows/demo/badge.svg)](https://github.com/SoCXin/CH552/actions/workflows/demo.yml)
 [![Build Status](https://github.com/SoCXin/CH552/workflows/src/badge.svg)](https://github.com/SoCXin/CH552/actions/workflows/src.yml)
 
 * [WCH](http://www.wch.cn/)：[E8051](https://github.com/SoCXin/8051)
 * [L1R1](https://github.com/SoCXin/Level)：24 MHz
 
 
-## [简介](https://docs.soc.xin/CH552)
+## [简介](https://doc.soc.xin/CH552)
 
 [CH552](https://github.com/SoCXin/CH552) 兼容MCS51的增强型E8051内核，79%指令是单字节单周期指令，2KB BootLoader + 14KB Flash，1K xRAM(支持DMA) +256B iRAM，128B DataFlash。
 
 内置24MHz时钟源和PLL，内置了ADC模数转换、触摸按键电容检测、3组定时器和信号捕捉及PWM、双异步串口、SPI、USB设备控制器和全速收发器、USB type-C等功能模块。
 
-[![sites](docs/CH552.png)](http://www.wch.cn/products/CH552.html)
+
 #### 关键特性
 
 * 5V->3.3V LDO
