@@ -1,56 +1,36 @@
 {
-    "name":"CH552",
-    "series":["CH552P","CH552T","CH552E","CH552G","CH551G"],
     "type":"MCU",
-    "Core":"MCS51",
-    "Freq":"24MHz",
-    "description":"WCH 1T 8051 MCU",
-    "peripheral": ["ADC","USB","UART","SPI","LDO","PWM"],
+    "name":"CH552",
+    "title": "WCH CH552 MCU",
+    "description":"WCH low cost USB MCU",
+    "Core": {
+        "CoreNum": 1,
+        "Core":"MCS-51",
+        "Fmax":24,
+        "DMIPS": 24,
+        "CoreMark": 24
+    },
+    "manufacturer": {
+        "vendor":"WCH",
+        "homepage":"http://www.wch.cn"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SoCXin/CH552.git"
+    },
+    "version":"1.0.0",
+    "series":["CH552P","CH552T","CH552E","CH552G","CH551G"],
     "package":["QFN16","MSOP10","TSSOP20","SOP16"],
-    "SRAM":1,
-    "Flash":16,
-    "DATA":128,
-    "UART": {
-        "num": 2,
-        "FIFO": 16,
-        "ISO7816": 1,
-        "more":["BUAD","LIN","IrDA"]
+    "peripheral": ["USB","ADC","UART","SPI","IIC"],
+    "temp": [-40,125],
+    "volt": [2.5,5.5],
+    "ESD": {
+        "HBM": 4000,
+        "CDM": 500
     },
-    "ADC": {
-        "num": 1,
-        "channel": 4,
-        "resolution": 8,
-        "rate": 2400
-    },
-    "TIM": {
-        "resolution":[16,16,16],
-        "rate": 1024
-    },
-    "USB": {
-        "num": 1,
-        "FIFO": 64,
-        "more":["FS","type-C","device"]
-    },
-    "PWR": {
-        "VDD": [2800,5000],
-        "Ivdd": 3.5,
-        "LDO": [5000,3300],
-        "rate": 1024
-    },
-    "PWM": {
-        "num": 2,
-        "resolution": 8,
-        "rate": 256
-    },
-    "upload": {
-        "ISP": true,
-        "IAP": true,
-        "SWD": true,
-        "speed": 115200
-    },
-    "vendor":"WCH",
-    "url":"http://www.SoC.xin/CH552",
-    "repo":"https://github.com/SoCXin/CH552",
-    "homepage": "http://www.wch.cn/products/CH552.html",
-    "version":"1.0.0"
+    "keywords": [
+        "MCS-51",
+        "WCH",
+        "ADC","I2C","USB","SPI","UART"
+    ]
 }

@@ -1,5 +1,67 @@
-*.pyc
-*.hex
-*.log
 .pio/
 .vscode/
+__pycache__/
+settings
+Debug
+*.py[cod]
+*$py.class
+*__pyc*/
+*.DS_Store
+*.autosave
+*~
+~*
+.settings
+output
+# .mxproject
+# Change*
+# CHANGE*
+COPY*
+*CONTRIBU*
+LICENSE*
+*.swp
+*.lck
+*.log
+*.ewt
+*.ewd
+*.crf
+*.dep
+*.map
+*.hex
+*.bin
+*.bak
+# *.txt
+*.lst
+*.sct
+*.elf
+# *.ini
+*_sc*
+*cm23*
+*cm33*
+# *cm3*
+# *cm4*
+# *cm7*
+*cm1*
+core_armv8*
+*.uvgu*
+# .gitmodules
+# *.png
+*.jpg
+*.rst
+.travis.yml
+tests
+# mk
+*.launch
+DebugConfig
+RTE
+*.d
+*.o
+*.axf
+*.htm
+*.lnp
+*.scvd
+*.iex
+# !sRCA.bin
+Obj
+List
+Exe
+TEST/
